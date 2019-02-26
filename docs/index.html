@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jitter in NANOGrav Pulsars</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+			li { margin-bottom: 8pt; }
+		</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>NANOGrav</strong> Jitter in NANOGrav Pulsars</a>
+									<ul class="icons">
+										<li><a href="https://twitter.com/nanograv?lang=en" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/NANOGrav/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/nanograv/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h2>The NANOGrav 12.5-year Data Set: The Frequency Dependence of Pulse Jitter in Precision Millisecond Pulsars</h2>
+										</header>
+										<p>by the <a href="http://nanograv.org/people/">NANOGrav Collaboration</a>;</br>
+											corresponding author: <a href="mailto:michael.lam@mail.wvu.edu?Subject=NANOGrav%20Jitter"
+											target="_top">Michael T. Lam</a>.
+										</p>
+										<p>Published in <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ab01cd/meta">The Astrophysical Journal, February 25th, 2019</a>.
+										<p>
+										  We analyzed the NANOGrav 12.5-year data set from the <a href="http://nanograv.org/">North American Nanohertz Observatory for Gravitational Waves (NANOGrav)</a> for pulse jitter, the effect that individual pulses look different from the very stable average pulse shape. The result is an increased uncertainty on our times of arrival and therefore <b>pulsar timing experiments must properly model jitter as a significant component of noise within our Galactic-scale detector</b>. While the dependence of this effect with radio frequency has been investigated over broad frequency ranges, including in a <a href="https://iopscience.iop.org/article/10.3847/0004-637X/819/2/155/meta">paper from our 9-year data set</a>, this is the first study that investigate the functional form of the frequency dependence. We detected jitter in 43 of the 48 pulsars analyzed, with 30 of them showing significant frequency dependence. 
+
+
+
+										</p>
+										<ul class="actions">
+											<li><a href="https://arxiv.org/abs/1809.03058" class="button medium">Read paper</a></li>
+											<!---<li><a href="https://github.com/nanograv/11yr_stochastic_analysis" class="button medium">View code</a></li>-->
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/profilepicPFC.jpg" alt="" />
+									</span>
+								</section>
+
+
+								<!-- Section 0 -->
+									<section>
+										<header class="major">
+											<h2>The Randomness of Pulse Shapes</h2>
+										</header>
+
+										<div class="row 200%">
+
+											<div class="6u 12u$(medium)">
+												<span class="image"><img src="images/J2145_waterfall_joy.png" alt="" /></span> <!--- removed "image fit" --->
+												<p><b>Image</b>: Jitter in the NANOGrav pulsar J2145-0750. Each pulse is actually made of 10 individual pulses for clarity, but one can see that even these averages "jitter" around compared to the very stable average pulse at top. Reproduced from "<a href="https://arxiv.org/abs/1810.06594">Science with the Next-Generation VLA and Pulsar Timing Arrays</a>"</p>
+										
+											</div>
+
+											<div class="6u 12u$(medium)">
+												<ul>
+												  <li>
+
+												    The "miracle" of pulsar timing relies on the fact that the <b>average pulse shape of pulsars is very stable</b>. Over the course of decades, we can therefore determine when a set of pulses arrives at our telescopes very precisely.
+												  </li>
+
+												  <li>
+												    Since their discovery, it has been known that individual pulses from pulsars do not resemble their average pulse shape. that means that while the <b>climate</b> of the pulsar magnetosphere is extremely stable, there is signicant <b>weather</b> on the timescale of a single rotation.
+
+												  </li>
+												  <li>
+			       									    Calculating a time of arrival (TOA) relies on fitting a template pulse shape to a data pulse shape. This assumption relies on the fact that the data shapee is an exact copy of the template shape, scaled and shifted. Since the average data shape is actually made of individual pulses all of different shapes, the assumption of "matched filtering" is broken and <b>we must account for this effect in estimating our TOA uncertainties</b>.
+													</li>
+
+													<li>
+													  Advancing the characterization and modeling of sources of noise in our timing data is a prime focus of NANOGrav's <b>Noise Budget</b> working group.
+													</li>
+
+
+
+
+												</ul>
+
+												<ul class="actions">
+													<li><a href="http://nanograv.org/research/" class="button medium">Read more</a></li>
+												</ul>
+
+											</div>
+
+										</div>
+
+									</section>
+
+							<!-- Section 1 -->
+								<section>
+									<header class="major">
+										<h2>The NANOGrav 12.5-year Data Set</h2>
+									</header>
+
+									<div class="row 200%">
+
+										<div class="6u 12u$(medium)">
+											<ul>
+												<li>
+													NANOGrav's <b>upcoming data release</b> contains radio-pulse times
+													of arrival (TOAs) and timing-models for <b>48 millisecond pulsars</b>. At the time of the submission of this paper, the pulse profiles however were finalized.
+												</li>
+
+												<li>
+													The observations span roughly <b>12.9 years</b>, from July 30, 2005,
+														to June 30, 2017. The pulsar with the longest baseline
+														is J1744-1134, with 12.87 years of observations.
+														The pulsar with the largest data volume is J1713+0747,
+														with 40,000 TOAs.
+												</li>
+
+												<li>
+													Observations were carried out using the 100-m Robert C.
+														Byrd <b>Green Bank Telescope</b> (GBT) of the
+														<a href="http://greenbankobservatory.org/telescopes/gbt/">Green Bank Observatory</a>,
+														and the 305-m William E. Gordon Telescope (<b>Arecibo</b>) of
+														<a href="http://outreach.naic.edu/ao/scientist-user-portal/">Arecibo Observatory</a>.
+												</li>
+
+												<li>
+													In the sky map shown here for the 11-year data set, pulsar positions are marked by circles, with areas proportional to the number of TOAs in the dataset; the color scale indicates the timing baseline. The 12.5-year data set adds three additional pulsars.
+													The <b>34 pulsars with baselines greater than 3 years</b>
+													have solid red edges. We use only these 34 in our searches
+													for a GW background.
+												</li>
+
+											</ul>
+
+											<ul class="actions">
+												<li><a href="https://arxiv.org/abs/1801.01837" class="button medium">Read 11-yr data paper</a></li>
+												<li><a href="https://data.nanograv.org/" class="button medium">Download data</a></li>
+											</ul>
+
+										</div>
+
+										<div class="6u 12u$(medium)">
+											<span class="image fit"><img src="images/nano11yr_pulsardist.png" alt="" /></span>
+												<p><b>Image</b>: sky map of NANOGrav pulsars in the 11-yr data set.</p>
+										</div>
+
+									</div>
+
+								</section>
+
+
+								<!-- Section 2 -->
+									<section>
+										<header class="major">
+											<h2>Short-Term Timing Residuals</h2>
+										</header>
+
+										<div class="row 200%">
+
+											<div class="6u 12u$(medium)">
+												<span class="image fit"><img src="images/J1713+0747.png" alt="" /></span>
+												<p><b>Image</b>: Short-term timing residuals as a function of pulse signal-to-noise (S/N) ratio for one of our best pulsars, PSR J1713+0747, over three frequency bands (red: 820 MHz, gray: 1400 MHz, blue: 2300 MHz). Without jitter, as the S/N gets very large, we expect the spread in the points to go to zero. We see that this is not the case and that there is a constant spread out to high S/N.</p>
+
+
+
+
+											</div>
+
+											<div class="6u 12u$(medium)">
+
+												<ul>
+
+													<li>
+													Rather than examine the TOAs produced in our final data set, we return to the calibrated data profiles with finer time resolution, typically broken into 1 or 2 minute integrations, allowing us to <b>probe jitter in short timescales</b>. We perform our analysis with the NANOGrav software package <a href="https://mtlam.github.io/PyPulse/">PyPulse</a>.
+
+													</li>
+
+												  <li>
+
+													  For each individual observation in our data set, we assume that the "initial" timing model is not perfect but fairly good. We fit for a modification to the timing model and subtract all frequency-dependent delays over the course of each observation to remove unknown dispersion, profile evolution, and more. We are left over with <b>short-term timing residuals</b>.
+
+													</li>
+
+													<li>
+													  Once we have our set of short-term timing residuals, we plot them as a function of pulse signal-to-noise (S/N) ratio. If there was no jitter, we would expect that as the S/N goes to infinity, that the spread of the residuals would go to zero. Instead we see that as the S/N gets larger, the spread remains constant, due to the <b>random nature of jitter</b>.
+													</li>
+
+													<li>
+
+													  We must also account for a separate effect due to the interstellar medium, which causes slight pulse shape changes as well. We can predict what the amplitude of <b>scintillation noise from scattering measurements</b>, such as in the analysis on our <a href="https://arxiv.org/abs/1601.04490">9-year data set</a>.
+
+													</li>
+
+
+												</ul>
+
+											</div>
+
+										</div>
+
+									</section>
+
+									<!-- Section 3 -->
+										<section>
+											<header class="major">
+												<h2>Modeling the Frequency Dependence</h2>
+											</header>
+
+											<div class="row 200%">
+
+												<div class="6u 12u$(medium)">
+
+													<ul>
+
+													  <li>
+				We compared <b>five different models for the functional form of the frequency dependence</b> of jitter: constant with frequency, constant within each frequency band, power law, power law plus a constant, and a log polynomial
+														</li>
+										  
+													  <li>
+
+														  We used <b>maximum likelihood methods</b> in our analysis to estimate the parameters of our different models. Our code was written on top of the <a href="http://dfm.io/emcee">EMCEE</a> Markov chain Monte Carlo package.
+
+
+														</li>
+
+
+
+														<li>
+
+														  For 43 of the 48 pulsars examined, we were able to detect significant jitter, compared with 22 out of 37 in our <a href="https://arxiv.org/abs/1512.08326">previous analysis on the 9-yr data set</a>. We found <b>significant frequency dependence in 30 pulsars</b> in our data set.
+
+														</li>
+
+														<li>
+
+														  We compared which model was <b>most preferred</b> using the Bayesian Information Criterion. The most significant model for jitter was the power-law dependence.
+														</li>
+
+										
+													</ul>
+
+												</div>
+
+												<div class="6u 12u$(medium)">
+													<span class="image fit"><img src="images/timedepJ1713+0747.png" alt="" /></span>
+													<p><b>Image</b>: The most preferred models for jitter for PSR J1713+0747 when looking at each year indepedently. </p>
+
+
+												</div>
+
+											</div>
+
+
+										</section>
+
+
+										<!-- Section 4 -->
+											<section>
+												<header class="major">
+													<h2>The Statistics of Jitter</h2>
+												</header>
+
+												<div class="row 200%">
+
+													<div class="6u 12u$(medium)">
+														<span class="image fit"><img src="images/kJ.png" alt="" /></span>
+														<p><b>Image</b>: The probability density function for the jitter parameter we use, which describes the amplitude of the jitter at the single single pulse level divided by the pulse period.</p>
+													</div>
+
+													<div class="6u 12u$(medium)">
+
+														<ul>
+															<li>
+
+															  While the amplitude of jitter varies per pulsar, we found that the <b>rule of thumb for the amplitude</b> is that the timing variations from jitter are roughly 1% of a pulsar's period.
+										
+															</li>
+
+										
+
+															<li>
+																Jitter was seen to correlate with the the average pulse width as well as the number of components that make up a pulse shape. Because <b>pulse shapes are complex</b>, our method simplifies the timing variations to a single number for each pulsar at each frequency.
+
+
+															<li>
+
+															  For the bright millisecond pulsar B1937+21, we were able to test the statistics of <b>jitter between its main pulse with its interpulse</b>. We found that the values were largely consistent.
+															</li>
+															<li>
+															  We we do not expect there to be time dependence to jitter, we investigate this possibility in two of our best pulsars. We see that some slight variations in the pulsar J1909-3744 are likely due to radio frequency interference and that, if so, <b>the intrinsic value of jitter may be lower, and the pulsar may be even more precise than we can currently measure</b>.
+															  
+
+														</ul>
+
+													</div>
+
+												</div>
+
+
+											</section>
+
+											<!-- Section 5 -->
+												<section>
+													<header class="major">
+														<h2>Future Prospects for Noise Modeling</h2>
+													</header>
+
+													<div class="row 200%">
+
+														<div class="6u 12u$(medium)">
+
+															<ul>
+
+															  <li>
+
+															    As new, larger telescopes come online, it is important to take jitter into account as the dominant source of TOA uncertainty over noise in the electronics. Building a larger telescope or a receiver that covers wider frequency does not reduce the jitter noise. The only way to <b>reduce jitter is by observing a pulsar for more time</b>. Breaking arrays of telescopes into "sub-arrays" may also be useful in certain cases. 
+
+
+															  </li>
+
+
+						<li>
+
+						  Since jitter is becoming so dominant, it is an important factor to consider in the design of new telescopes. As NANOGrav looks to develop <b>new concepts for a dedicated pulsar timing array telescope</b>, numbers like these feature heavily in those calculations.
+
+
+																</li>
+																<li>
+																For telescopes currently observing in the <b>worldwide International Pulsar Timing Array</b> effort, we may decide that certain telescopes should observe pulsars which are heavily dominated by the effect of jitter, while other more sensitive telescopes should focus on weker pulsars. These analyses, however, must be understood in greater depth.
+																</li>
+
+
+
+																<li>
+
+																As with the Laser Interferometer Gravitational-Wave Observatory (LIGO), we must understand all of our sources of noise and form our "<b>noise budget</b>" so that we can produce a believable detection of gravitational waves.
+
+																</li>
+
+																
+
+															</ul>
+
+														</div>
+
+														<div class="6u 12u$(medium)">
+															<span class="image fit"><img src="images/spectrum.png" alt="" /></span>
+															<p><b>Image</b>: A noise spectrum for PSR J1713+0747, summarizing a wide variety of physical effects that have been studied in NANOGrav pulsars, including jitter. Courtesy J. Cordes.</p>
+
+															</body>
+														</div>
+
+													</div>
+
+
+												</section>
+
+												<!-- Section 6 -->
+													<!-- Section 7 -->
+														<section>
+															<header class="major">
+																<h2>Authors</h2>
+															</header>
+
+															<div class="row 200%">
+
+																<div class="6u 12u$(medium)">
+																	<ul>
+																		<li>
+																		  Members of the <b>NANOGrav Collaboration</b>: M. T. Lam, M. A. McLaughlin, Z. Arzoumanian, H. Blumer, P. R. Brook,  H. T. Cromartie, P. B. Demorest, M. E. DeCesar, T. Dolch, J. A. Ellis, R. D. Ferdman, E. C. Ferrara, E. Fonseca, N. Garver-Daniels, P. A. Gentile, M. L. Jones, D. R. Lorimer, R. S. Lynch, C. Ng, D. J. Nice, T. T. Pennucci, S. M. Ransom, R. Spiewak, I. H. Stairs, K. Stovall, J. K. Swiggum, S. J. Vigeland, W. W. Zhu
+																		</li>
+
+
+																		<li><b>Contact</b>:
+
+
+<a href="mailto:michael.lam@mail.wvu.edu?Subject=NANOGrav%20Jitter" target="_top">Dr. Michael T. Lam</a> (corresponding author),
+<a href="mailto:sransom@nrao.edu?Subject=NANOGrav%20Jitter" target="_top">Dr. Scott Ransom</a> (NANOGrav chair).</li>
+
+																	</ul>
+																</div>
+
+																<div class="6u 12u$(medium)">
+																	<span class="image fit"><img src="images/nano_people.jpg" alt="" /></span>
+																	<p>The NANOGrav Collaboration at the 2017 Fall meeting in Lafayette College, PA
+																</div>
+
+															</div>
+
+
+														</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; NANOGrav 2018. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+
+
+	</body>
+
+
+</html>
